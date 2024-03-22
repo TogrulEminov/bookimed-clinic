@@ -1,0 +1,23 @@
+[
+  {
+    "diognostic": "PET/CT"
+  },
+  {
+    "diognostic": "MRI of one area"
+  },
+  {
+    "diognostic": "Colonoscopy"
+  },
+  {
+    "diognostic": "CT coronary angiography"
+  },
+  {
+    "diognostic": "Holter monitoring"
+  },
+  {
+    "diognostic": "Angiography"
+  },
+  {
+    "diognostic": "Helicobacter Pylori test"
+  }
+]
