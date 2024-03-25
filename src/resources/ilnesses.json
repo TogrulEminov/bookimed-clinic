@@ -1,26 +1,26 @@
 [
   {
-    "ilnesses": "Lymphoma"
+    "name": "Lymphoma"
   },
   {
-    "ilnesses": "Myeloma"
+    "name": "Myeloma"
   },
   {
-    "ilnesses": "Umbilical hernia"
+    "name": "Umbilical hernia"
   },
   {
-    "ilnesses": "Adenoids"
+    "name": "Adenoids"
   },
   {
-    "ilnesses": "Obesity"
+    "name": "Obesity"
   },
   {
-    "ilnesses": "Varicocele"
+    "name": "Varicocele"
   },
   {
-    "ilnesses": "Herniated disk"
+    "name": "Herniated disk"
   },
   {
-    "ilnesses": "Uterine fibroids"
+    "name": "Uterine fibroids"
   }
 ]

@@ -1,9 +1,9 @@
 [
   {
-    "created-at": "2024-03-22 (21:16)",
+    "createdAt": "2024-03-22 (21:16)",
     "country": "Azerbaijan",
     "ilnesses": "Lymphoma",
-    "flag": "../assets/az.webp",
+    "flag": "../../src/assets/az.webp",
     "language": "az",
     "treatments": "Heart Valve Replacement",
     "departments": "Neurosurgery",
@@ -12,11 +12,11 @@
     "diognostic": "CT coronary angiography"
   },
   {
-    "created-at": "2024-03-20 (21:34)",
+    "createdAt": "2024-03-20 (21:34)",
     "country": "Azerbaijan",
     "treatments": "Retinal detachment surgery",
     "ilnesses": "Myeloma",
-    "flag": "../assets/az.webp",
+    "flag": "../../src/assets/az.webp",
     "language": "az",
     "departments": "Endocrinology",
     "attach": "0 file (s)",
@@ -24,11 +24,11 @@
     "diognostic": "Helicobacter Pylori test"
   },
   {
-    "created-at": "2024-03-22 (11:15)",
+    "createdAt": "2024-03-22 (11:15)",
     "country": "Turkey",
     "ilnesses": "Umbilical hernia",
     "treatments": "Mastectomy",
-    "flag": "../assets/tr.png",
+    "flag": "../../src/assets/tr.png",
     "language": "tr",
     "departments": "Orthopedics",
     "attach": "0 file (s)",
@@ -36,11 +36,11 @@
     "diognostic": "CT coronary angiography"
   },
   {
-    "created-at": "2024-03-20 (16:53)",
+    "createdAt": "2024-03-20 (16:53)",
     "country": "Turkey",
     "treatments": "Laparoscopic nephrectomy",
     "ilnesses": "Adenoids",
-    "flag": "../assets/tr.png",
+    "flag": "../../src/assets/tr.png",
     "language": "tr",
     "departments": "Oncology",
     "attach": "0 file (s)",
@@ -49,11 +49,11 @@
   },
 
   {
-    "created-at": "2024-03-21 (22:45)",
+    "createdAt": "2024-03-21 (22:45)",
     "country": "Russian",
     "treatments": "Coronary angiography",
     "ilnesses": "Obesity",
-    "flag": "../assets/ru.webp",
+    "flag": "../../src/assets/ru.webp",
     "language": "ru",
     "departments": "Cardiology",
     "attach": "0 file (s)",
@@ -61,11 +61,11 @@
     "diognostic": "Holter monitoring"
   },
   {
-    "created-at": "2024-03-21 (22:45)",
+    "createdAt": "2024-03-21 (22:45)",
     "country": "Russian",
     "ilnesses": "Varicocele",
     "treatments": "Myomectomy (removal of uterine fibroids)",
-    "flag": "../assets/ru.webp",
+    "flag": "../../src/assets/ru.webp",
     "language": "ru",
     "departments": "Gastroenterology",
     "attach": "0 file (s)",
@@ -73,11 +73,11 @@
     "diognostic": "MRI of one area"
   },
   {
-    "created-at": "2024-03-21 (04:32)",
+    "createdAt": "2024-03-21 (04:32)",
     "country": "English",
     "ilnesses": "Herniated disk",
     "treatments": "Facelift surgery",
-    "flag": "../assets/en.jpg",
+    "flag": "../../src/assets/en.jpg",
     "language": "en",
     "departments": "Neurology",
     "attach": "0 file (s)",
@@ -85,11 +85,11 @@
     "diognostic": "Angiography"
   },
   {
-    "created-at": "2024-03-21 (04:32)",
+    "createdAt": "2024-03-21 (04:32)",
     "country": "English",
     "treatments": "Liposuction",
     "ilnesses": "Uterine fibroids",
-    "flag": "../assets/en.jpg",
+    "flag": "../../src/assets/en.jpg",
     "language": "en",
     "departments": "Ophthalmology",
     "attach": "40 file (s)",

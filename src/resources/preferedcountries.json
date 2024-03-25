@@ -1,27 +1,27 @@
 [
-  { "countries": "Israel" },
+  { "name": "Israel" },
   {
-    "countries": "Poland"
+    "name": "Poland"
   },
   {
-    "countries": "Germany"
+    "name": "Germany"
   },
   {
-    "countries": "Estonia"
+    "name": "Estonia"
   },
   {
-    "countries": "Austia"
+    "name": "Austia"
   },
   {
-    "countries": "Belarus"
+    "name": "Belarus"
   },
   {
-    "countries": "India"
+    "name": "India"
   },
   {
-    "countries": "Azerbaijan"
+    "name": "Azerbaijan"
   },
   {
-    "countries": "Turkey"
+    "name": "Turkey"
   }
 ]

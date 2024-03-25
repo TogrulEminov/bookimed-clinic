@@ -1,26 +1,26 @@
 [
   {
-    "treatments": "Heart Valve Replacement"
+    "name": "Heart Valve Replacement"
   },
   {
-    "treatments": "Retinal detachment surgery"
+    "name": "Retinal detachment surgery"
   },
   {
-    "treatments": "Mastectomy"
+    "name": "Mastectomy"
   },
   {
-    "treatments": "Laparoscopic nephrectomy"
+    "name": "Laparoscopic nephrectomy"
   },
   {
-    "treatments": "Coronary angiography"
+    "name": "Coronary angiography"
   },
   {
-    "treatments": "Facelift surgery"
+    "name": "Facelift surgery"
   },
   {
-    "treatments": "Liposuction"
+    "name": "Liposuction"
   },
   {
-    "treatments": "Myomectomy (removal of uterine fibroids)"
+    "name": "Myomectomy (removal of uterine fibroids)"
   }
 ]

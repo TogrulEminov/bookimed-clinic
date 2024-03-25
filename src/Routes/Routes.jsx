@@ -12,7 +12,7 @@ export const ROUTES = [
         element: <Lead />,
       },
       {
-        path: 'premium-clinic',
+        path: 'clinic',
         element: <Clinic />,
       },
     ],

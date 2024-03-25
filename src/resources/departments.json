@@ -1,10 +1,10 @@
 [
-  { "departments": "Neurosurgery" },
-  { "departments": "Orthopedics" },
-  { "departments": "Cardiology" },
-  { "departments": "Neurology" },
-  { "departments": "Endocrinology" },
-  { "departments": "Oncology" },
-  { "departments": "Gastroenterology" },
-  { "departments": "Ophthalmology" }
+  { "name": "Neurosurgery" },
+  { "name": "Orthopedics" },
+  { "name": "Cardiology" },
+  { "name": "Neurology" },
+  { "name": "Endocrinology" },
+  { "name": "Oncology" },
+  { "name": "Gastroenterology" },
+  { "name": "Ophthalmology" }
 ]

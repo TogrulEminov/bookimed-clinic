@@ -68,6 +68,7 @@ export default {
       'yellow-800': '#f9a825',
       'yellow-900': '#f57f17',
       transparent: 'transparent',
+      greenown: '#a3cc0e',
       white: '#fff',
       'blue-gray-50': 'rgb(236 239 241 / 1)',
       'blue-gray-900': 'rgb(38 50 56 / 1)',

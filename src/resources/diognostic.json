@@ -1,23 +1,23 @@
 [
   {
-    "diognostic": "PET/CT"
+    "name": "PET/CT"
   },
   {
-    "diognostic": "MRI of one area"
+    "name": "MRI of one area"
   },
   {
-    "diognostic": "Colonoscopy"
+    "name": "Colonoscopy"
   },
   {
-    "diognostic": "CT coronary angiography"
+    "name": "CT coronary angiography"
   },
   {
-    "diognostic": "Holter monitoring"
+    "name": "Holter monitoring"
   },
   {
-    "diognostic": "Angiography"
+    "name": "Angiography"
   },
   {
-    "diognostic": "Helicobacter Pylori test"
+    "name": "Helicobacter Pylori test"
   }
 ]
