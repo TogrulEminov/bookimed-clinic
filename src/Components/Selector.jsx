@@ -83,13 +83,15 @@ const Selector = ({
                     .startsWith(inputValue.toLowerCase()) && 'block'
                 }`}
               onClick={() => {
-                if (
-                  country.name.toLowerCase() !== selected?.toLowerCase()
-                ) {
-                  setSelected(country.name);
-                  setOpen(false);
-                  setInputValue('');
-                }
+                setSelected(prevSelected => {
+                  if (prevSelected.toLowerCase() === country.name.toLowerCase()) {
+                    return '';
+                  } else {
+                    return country.name;
+                  }
+                });
+                setOpen(false);
+                setInputValue('');
               }}>
               <span
                 className={`flex items-center justify-center w-[16px] h-[16px] border rounded-[4px] border-[#d4d4d4] group-hover:border-[#15803d]
