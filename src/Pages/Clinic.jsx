@@ -17,6 +17,7 @@ const Clinic = () => {
     setOpen(false);
     document.body.classList.remove('overflow-hidden');
   };
+
   return (
     <>
       <div className="row gap-y-6 w-full">
@@ -118,7 +119,7 @@ const Clinic = () => {
         </div>
       </div>
 
-      <UploadImage modal={open} closeModal={closeModal} />
+      <UploadImage modal={open} closeModal={closeModal}   />
     </>
   );
 };
