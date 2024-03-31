@@ -52,9 +52,9 @@ const FilterAreas = ({
     setPrefered('');
   };
   return (
-    <div className="w-full bg-white shadow-xl p-10">
+    <div className="w-full bg-white shadow-xl p-5 md:p-10">
       <div className="row gap-y-6">
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <Selector
             selected={language}
             setSelected={setLanguage}
@@ -63,7 +63,7 @@ const FilterAreas = ({
             placeholder={'Search your language'}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={countries}
             placeholder="Search country"
@@ -72,7 +72,7 @@ const FilterAreas = ({
             setSelected={setPrefered}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={nationalites}
             placeholder="Search nationalites"
@@ -81,7 +81,7 @@ const FilterAreas = ({
             setSelected={setNationalits}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={departments}
             placeholder="Search departments"
@@ -90,7 +90,7 @@ const FilterAreas = ({
             setSelected={setDepart}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={ilnesses}
             placeholder="Search ilnesses"
@@ -99,7 +99,7 @@ const FilterAreas = ({
             setSelected={setIll}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={treatments}
             placeholder="Search treatments"
@@ -108,7 +108,7 @@ const FilterAreas = ({
             setSelected={settreat}
           />
         </div>
-        <div className="md:col-md-4 lg:col-lg-3">
+        <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
           <MultiSelect
             data={diaqnostics}
             placeholder="Search diaqnostics"
@@ -118,7 +118,7 @@ const FilterAreas = ({
           />
         </div>
         {active && (
-          <div className="md:col-md-4 lg:col-lg-3">
+          <div className="md:col-md-6 lg:col-lg-4 xl:col-xl-3">
             <button
               onClick={handleReset}
               className="border-2 border-[#15803d]  text-[#15803d] rounded-2xl p-1.5 px-5">
