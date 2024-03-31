@@ -74,6 +74,9 @@ export default {
       'blue-gray-900': 'rgb(38 50 56 / 1)',
       black: '#000',
     },
+    boxShadow: {
+      own1: '0px 25px 80px rgba(0, 0, 0, 0.15)',
+    },
   },
   plugins: [],
 };
