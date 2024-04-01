@@ -5,6 +5,7 @@ import { useState } from 'react';
 import ClinicsPhoto from '../Section/Clinic/ClinicsPhoto';
 import WarningSection from '../Section/Clinic/WarningSection';
 import EditName from '../Section/Clinic/EditName';
+import EditFoundation from '../Section/Clinic/EditFoundation';
 
 const Clinic = () => {
   const [open, setOpen] = useState(false);
@@ -114,14 +115,15 @@ const Clinic = () => {
           </div>
         </div>
         <div className="col-12 md:col-md-12 lg:col-lg-8 xl:col-xl-9">
-          <div className="bg-white rounded-3xl shadow-own1 p-8">
+          <div className="bg-white rounded-3xl ,d:shadow-own1 p-3 md:p-8">
             <ClinicsPhoto handleOpen={handleOpen} />
             <WarningSection />
             <EditName />
+            <EditFoundation />
           </div>
         </div>
       </div>
-      
+
       <UploadImage modal={open} closeModal={closeModal} />
     </>
   );

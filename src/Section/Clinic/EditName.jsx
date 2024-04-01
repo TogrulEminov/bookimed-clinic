@@ -36,11 +36,11 @@ const EditName = () => {
         <span className="w-full block">
           Location : {details?.country_name}({details?.country_code})
         </span>
-        <div className="w-full my-4 flex items-center">
+        <div className="w-full my-4 flex flex-wrap gap-y-2 items-center">
           <span className="text-base font-bold">{edit}</span>
           <button
             onClick={handleOpen}
-            className="border font-semibold ml-4 p-2 px-5 flex items-center justify-center text-[#a3cc0e] border-[#a3cc0e]  rounded-3xl">
+            className="border font-semibold md:ml-4 p-2 px-5 w-full max-w-full md:max-w-[100px] flex items-center justify-center text-[#a3cc0e] border-[#a3cc0e]  rounded-xl md:rounded-3xl">
             <Icons.edit className="w-3 h-3 mr-3 fill-[#a3cc0e]" />
             Edit
           </button>

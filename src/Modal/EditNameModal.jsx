@@ -27,9 +27,11 @@ const EditNameModal = ({ modal, closeModal }) => {
       <div
         className="fixed inset-0 -z-[1] bg-opacity bg-[rgba(0,0,0,0.5)]"
         onClick={() => closeModal()}></div>
-      <div className="bg-white rounded-xl   custom-animation inline-block max-h-[600px]  align-middle	shadow-[0 12px 15px 0 rgba(0, 0, 0, 0.25)] overflow-y-auto relative p-6  py-5 w-full  max-w-[600px]">
+      <div className="bg-white rounded-xl   custom-animation inline-block max-h-[400px]  align-middle	shadow-[0 12px 15px 0 rgba(0, 0, 0, 0.25)] overflow-y-auto relative p-3 md:p-6  py-5 w-full  max-w-[600px]">
         <div className="flex items-center justify-between my-3">
-          <h3 className="font-semibold text-lg lg:text-3xl">Edit clinic's photos</h3>
+          <h3 className="font-semibold text-lg lg:text-3xl">
+            Edit clinic's photos
+          </h3>
           <button className="text-[gray] " onClick={closeModal}>
             <Icons.Close className="w-8 h-8" />
           </button>
@@ -60,15 +62,16 @@ const EditNameModal = ({ modal, closeModal }) => {
           <span className="text-[gray] my-2 block float-right text-base">
             {editedValue?.length}/50
           </span>
-          <div className="w-full mt-4 my-2 flex flex-wrap gap-y-3 flex-col-reverse items-center justify-center ">
+          <div className="w-full mt-4 my-2 flex  flex-wrap-reverse md:flex-nowrap gap-y-3   items-center justify-center ">
             <button
               onClick={handleCancel}
-              className="text-left hover:text-black text-[gray] mx-5 capitalize">
+              type="button"
+              className="text-left hover:text-black text-[gray] mx-5 capitalize lg:w-1/2">
               close
             </button>
             <button
               type="submit"
-              className="px-10 py-3 mx-5 bg-red-400 rounded-2xl text-white flex items-center justify-center text-base">
+              className="px-10 py-3 mx-5 bg-red-400 rounded-2xl text-white flex items-center justify-center lg:w-1/2 text-base">
               Save changes
             </button>
           </div>
