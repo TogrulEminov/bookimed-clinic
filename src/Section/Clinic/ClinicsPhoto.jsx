@@ -19,7 +19,6 @@ const ClinicsPhoto = ({ handleOpen }) => {
           ) : (
             <div className="w-full h-full flex items-center justify-center">
               <div className="flex flex-col gap-y-3">
-                <span className="absolute left-3 top-4">1</span>
                 <Icons.NoData className="mx-auto" />
                 <span className="font-semibold">No data</span>
               </div>
@@ -50,7 +49,6 @@ const ClinicsPhoto = ({ handleOpen }) => {
                 ) : (
                   <div className="w-full h-full flex items-center justify-center">
                     <div className="flex flex-col gap-y-3">
-                      <span className="absolute left-3 top-4">{index + 2}</span>
                       <Icons.NoData className="mx-auto" />
                       <span className="font-semibold">No data</span>
                     </div>

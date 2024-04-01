@@ -34,8 +34,6 @@ const UploadImage = ({ modal, closeModal }) => {
     let images = e.target.files;
     fileBase64(images);
   };
-
-  console.log(array);
   const deleteItemByIndex = (index) => {
     const newArray = [...array];
     newArray.splice(index, 1);

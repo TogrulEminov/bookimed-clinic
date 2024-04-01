@@ -1,9 +1,10 @@
 import { Link, NavLink } from 'react-router-dom';
 import Progress_bar from '../Components/ProgressBar';
-import Icons from '../assets/Icons/icons';
 import UploadImage from '../Modal/UploadImage';
 import { useState } from 'react';
 import ClinicsPhoto from '../Section/Clinic/ClinicsPhoto';
+import WarningSection from '../Section/Clinic/WarningSection';
+import EditName from '../Section/Clinic/EditName';
 
 const Clinic = () => {
   const [open, setOpen] = useState(false);
@@ -115,11 +116,13 @@ const Clinic = () => {
         <div className="col-12 md:col-md-12 lg:col-lg-8 xl:col-xl-9">
           <div className="bg-white rounded-3xl shadow-own1 p-8">
             <ClinicsPhoto handleOpen={handleOpen} />
+            <WarningSection />
+            <EditName />
           </div>
         </div>
       </div>
-
-      <UploadImage modal={open} closeModal={closeModal}   />
+      
+      <UploadImage modal={open} closeModal={closeModal} />
     </>
   );
 };
