@@ -19,7 +19,7 @@ const WarningSection = () => {
           <Link
             to="/"
             target="_blank"
-            className="flex text-sm items-center gap-y-2 flex-wrap md:justify-center bg-[#fb765f] px-5 py-3 h-full gap-x-2 text-white md:text-lg  rounded-2xl">
+            className="flex text-sm items-center gap-y-2 flex-wrap justify-center bg-[#fb765f] px-5 py-3 h-full gap-x-2 text-white md:text-lg  rounded-2xl">
             <Icons.Search /> Check my profile on the website
           </Link>
         </div>

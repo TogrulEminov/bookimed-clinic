@@ -10,12 +10,15 @@ const UploadImage = ({ modal, closeModal }) => {
     }
   }, []);
 
+  const MAX_IMAGES = 5;
+
   const fileBase64 = (images) => {
     Promise.all(Array.from(images).map(fileToDataURL))
       .then((urls) => {
         const updatedArray = [...array, ...urls];
-        setArray(updatedArray);
-        localStorage.setItem('imageArray', JSON.stringify(updatedArray));
+        const trimmedArray = updatedArray.slice(-MAX_IMAGES);
+        setArray(trimmedArray);
+       
       })
       .catch((error) => {
         console.error(error);
@@ -40,6 +43,12 @@ const UploadImage = ({ modal, closeModal }) => {
     setArray(newArray);
     localStorage.setItem('imageArray', JSON.stringify(newArray));
   };
+
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    closeModal()
+    localStorage.setItem('imageArray', JSON.stringify(array));
+  }
   return (
     <div
       className={`fixed inset-0  z-[1000] px-3 justify-center overflow-y-auto items-center ${
@@ -149,13 +158,14 @@ const UploadImage = ({ modal, closeModal }) => {
               </div>
             </div>
           )}
-          <div>
+          <form onSubmit={handleSubmit}>
             <label
               htmlFor="file"
               className="relative flex items-center justify-center mt-4 w-20 h-20 bg-[#e7e7e7] border-4 border-[#a3cc0e] text-[#a3cc0e]">
               <input
                 id="file"
                 type="file"
+                accept="image/*"
                 className="sr-only cursor-pointer"
                 multiple={true}
                 onChange={handleImage}
@@ -169,13 +179,12 @@ const UploadImage = ({ modal, closeModal }) => {
                 close
               </button>
               <button
-                type="button"
-                onClick={closeModal}
+                type="submit"
                 className="px-10 py-3 mx-5 bg-red-400 rounded-2xl text-white flex items-center justify-center text-base">
                 Save changes
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

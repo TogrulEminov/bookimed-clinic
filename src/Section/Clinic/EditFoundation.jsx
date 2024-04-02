@@ -25,7 +25,7 @@ const EditFoundation = () => {
           <div className="col-12  md:col-md-6 lg:col-lg-3 lg:p-0">
             <div className="w-full border py-1 border-[#ddd] rounded-xl flex flex-col justify-center items-center">
               <h6 className="font-semibold text-base mb-1">
-                {values?.foundationYear}
+                {values?.foundationYear || 0}
               </h6>
               <span className="text-[gray] text-sm">Year of foundation</span>
             </div>
@@ -33,7 +33,7 @@ const EditFoundation = () => {
           <div className="col-12 md:col-md-6 lg:col-lg-3 lg:p-0">
             <div className="w-full border py-1 border-[#ddd] rounded-xl flex flex-col justify-center items-center">
               <h6 className="font-semibold text-base mb-1">
-                {values?.departments}
+                {values?.departments || 0}
               </h6>
               <span className="text-[gray] text-sm">Departments</span>
             </div>
@@ -41,21 +41,21 @@ const EditFoundation = () => {
           <div className="col-12 md:col-md-6 lg:col-lg-2 lg:p-0">
             <div className="w-full border py-1 border-[#ddd] rounded-xl flex flex-col justify-center items-center">
               <h6 className="font-semibold text-base mb-1">
-                {values?.doctors}
+                {values?.doctors || 0}
               </h6>
               <span className="text-[gray] text-sm">Doctors</span>
             </div>
           </div>
           <div className="col-12 md:col-md-6 lg:col-lg-1 lg:p-0">
             <div className="w-full border py-1 border-[#ddd] rounded-xl flex flex-col justify-center items-center">
-              <h6 className="font-semibold text-base mb-1">{values?.beds}</h6>
+              <h6 className="font-semibold text-base mb-1">{values?.beds || 0}</h6>
               <span className="text-[gray] text-sm">Beds</span>
             </div>
           </div>
           <div className="col-12 md:col-md-6 lg:col-lg-2 lg:p-0">
             <div className="w-full border py-1 border-[#ddd] rounded-xl flex flex-col justify-center items-center">
               <h6 className="font-semibold text-base mb-1">
-                {values?.patients}
+                {values?.patients || 0}
               </h6>
               <span className="text-[gray] text-[13px]">
                 Patient for a year

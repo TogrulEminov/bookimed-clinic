@@ -1,11 +1,12 @@
 import { Link, NavLink } from 'react-router-dom';
 import Progress_bar from '../Components/ProgressBar';
 import UploadImage from '../Modal/UploadImage';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ClinicsPhoto from '../Section/Clinic/ClinicsPhoto';
 import WarningSection from '../Section/Clinic/WarningSection';
 import EditName from '../Section/Clinic/EditName';
 import EditFoundation from '../Section/Clinic/EditFoundation';
+import Icons from '../assets/Icons/icons';
 
 const Clinic = () => {
   const [open, setOpen] = useState(false);
@@ -20,6 +21,10 @@ const Clinic = () => {
     document.body.classList.remove('overflow-hidden');
   };
 
+  const array = JSON.parse(localStorage.getItem('imageArray'));
+  const edit =
+    localStorage.getItem('editedValue') ||
+    localStorage.getItem('editedValueFoundation');
   return (
     <>
       <div className="row gap-y-6 w-full">
@@ -58,14 +63,34 @@ const Clinic = () => {
               <li>
                 <NavLink
                   to="#clinics-photo"
-                  className="py-3.5 hover:bg-[#f0fdf4]  px-4 font-medium flex items-center text-sm text-[#171717]">
-                  <span className="border rounded-full w-[14px] h-[14px] border-[#737373] block"></span>
+                  className={`py-3.5 hover:bg-[#f0fdf4]  px-4 font-medium flex items-center text-sm  ${
+                    array?.length >= 1 ? 'text-[#15803d]' : 'text-[#171717]'
+                  }`}>
+                  <span
+                    className={`border flex items-center justify-center rounded-full w-[14px] h-[14px] ${
+                      array?.length >= 1 ? 'text-[#15803d]' : 'border-[#737373]'
+                    } `}>
+                    {array?.length >= 1 ? (
+                      <Icons.check className="border-none" />
+                    ) : (
+                      ''
+                    )}
+                  </span>
                   <span className="ml-4"> Clinic's photo</span>
                 </NavLink>
               </li>
               <li>
-                <NavLink className="py-3.5 hover:bg-[#f0fdf4]  px-4 font-medium flex items-center text-sm text-[#171717]">
-                  <span className="border rounded-full w-[14px] h-[14px] border-[#737373] block"></span>
+                <NavLink
+                  to="#clinics-photo"
+                  className={`py-3.5 hover:bg-[#f0fdf4]  px-4 font-medium flex items-center text-sm  ${
+                    edit ? 'text-[#15803d]' : 'text-[#171717]'
+                  }`}>
+                  <span
+                    className={`border flex items-center justify-center rounded-full w-[14px] h-[14px] ${
+                      edit ? 'text-[#15803d]' : 'border-[#737373]'
+                    } `}>
+                    {edit ? <Icons.check className="border-none" /> : ''}
+                  </span>
                   <span className="ml-4">Basic information</span>
                 </NavLink>
               </li>
