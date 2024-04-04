@@ -7,6 +7,7 @@ import WarningSection from '../Section/Clinic/WarningSection';
 import EditName from '../Section/Clinic/EditName';
 import EditFoundation from '../Section/Clinic/EditFoundation';
 import Icons from '../assets/Icons/icons';
+import Doctors from '../Section/Clinic/Doctors/Doctors';
 
 const Clinic = () => {
   const [open, setOpen] = useState(false);
@@ -145,6 +146,7 @@ const Clinic = () => {
             <WarningSection />
             <EditName />
             <EditFoundation />
+            <Doctors />
           </div>
         </div>
       </div>
